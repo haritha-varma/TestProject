@@ -112,7 +112,7 @@ public class SearchController
             });
             LOG.debug("top count list {}",list.subList(0, topCount));
             List<Map.Entry<String, Integer>> requiredList = list.subList(0, topCount);
-            FileWriter fileWriter = new FileWriter(file,true);
+            FileWriter fileWriter = new FileWriter(file);
             BufferedWriter writer = new BufferedWriter(fileWriter);
             String message = "";
             for (Map.Entry<String, Integer> mapdtails:requiredList) {
